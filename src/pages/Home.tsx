@@ -1,7 +1,7 @@
-// import { useProduct } from "../providers/context";
+import { useProduct } from "../providers/context";
 
 export const Home = () => {
-  //   const { products } = useProduct();
+  const { products } = useProduct();
   return (
     <div>
       <h1>Testando</h1>

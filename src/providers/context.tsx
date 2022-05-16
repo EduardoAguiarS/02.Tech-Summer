@@ -1,9 +1,10 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
+import { ProductProps } from "../interfaces/ProductProps";
 
 interface ProductContextProps {
-  product: object;
+  product: object | undefined;
   products: Array<object>;
-  setProduct: (product: object) => void;
+  setProduct: object;
   selectedSKU: object;
   setSelectedSKU: (sku: object) => void;
 }
@@ -12,13 +13,15 @@ interface ProductProviderProps {
   children: React.ReactNode;
 }
 
-const ProductContext = createContext({} as ProductContextProps);
+const ProductContext = createContext<ProductContextProps>(
+  {} as ProductContextProps
+);
 
 export const ProductProvider: React.FC<ProductProviderProps> = ({
   children
 }) => {
-  const [product, setProduct] = useState({});
-  const [products, setProducts] = useState([]);
+  const [product, setProduct] = useState<ProductProps>();
+  const [products, setProducts] = useState<ProductProps[]>([]);
   const [selectedSKU, setSelectedSKU] = useState({});
 
   useEffect(() => {
