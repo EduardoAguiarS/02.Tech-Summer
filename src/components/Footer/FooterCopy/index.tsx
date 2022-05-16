@@ -1,4 +1,4 @@
-import logo from "../../../../public/assets/logo/logo-footer.svg";
+import logo from "../../../assets/logo/logo-footer.svg";
 import "./styles.scss";
 
 const FooterCopy = () => {

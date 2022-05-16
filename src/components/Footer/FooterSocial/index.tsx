@@ -1,9 +1,9 @@
 import "./styles.scss";
-import facebook from "../../../../public/icons/facebook.svg";
-import instagram from "../../../../public/icons/instagram.svg";
-import pinterest from "../../../../public/icons/pinterest.svg";
-import vtex from "../../../../public/icons/vtex.svg";
-import ebit from "../../../../public/icons/ebit.svg";
+import facebook from "../../../assets/icons/facebook.svg";
+import instagram from "../../../assets/icons/instagram.svg";
+import pinterest from "../../../assets/icons/pinterest.svg";
+import vtex from "../../../assets/icons/vtex.svg";
+import ebit from "../../../assets/icons/ebit.svg";
 
 const FooterSocial = () => {
   return (

@@ -1,5 +1,5 @@
 import "./styles.scss";
-import plus from "../../../../public/icons/plus.svg";
+import plus from "../../../assets/icons/plus.svg";
 
 const FooterTitle = ({ text }: any) => {
   return (

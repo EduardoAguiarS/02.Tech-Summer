@@ -1,0 +1,33 @@
+@import "../../../styles/variables.scss";
+
+.footer__container {
+  display: none;
+  margin-top: 6rem;
+  border-top: 2px solid $gray__light;
+  position: relative;
+
+  @media screen and (min-width: $screen__desktop) {
+    display: block;
+  }
+
+  .footer__comp {
+    padding: rem 0;
+
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer_sections {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer__list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+  }
+}
