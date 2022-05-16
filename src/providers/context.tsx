@@ -1,13 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
+import { ProductContextProps } from "../interfaces/ProductContextProps";
 import { ProductProps } from "../interfaces/ProductProps";
-
-interface ProductContextProps {
-  product: object | undefined;
-  products: Array<object>;
-  setProduct: object;
-  selectedSKU: object;
-  setSelectedSKU: (sku: object) => void;
-}
 
 interface ProductProviderProps {
   children: React.ReactNode;
