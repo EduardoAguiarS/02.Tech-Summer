@@ -1,4 +1,5 @@
 export interface ProductProps {
+  [x: string]: any;
   cacheId: string;
   productId: string;
   description: string;

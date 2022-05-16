@@ -1,10 +1,9 @@
-import { useProduct } from "../providers/context";
+import { ProductCard } from "../components/ProductCard";
 
 export const Home = () => {
-  const { products } = useProduct();
   return (
     <div>
-      <h1>Testando</h1>
+      <ProductCard />
     </div>
   );
 };

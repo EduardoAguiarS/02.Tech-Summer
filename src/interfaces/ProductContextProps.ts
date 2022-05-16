@@ -1,7 +1,9 @@
+import { ProductProps } from "./ProductProps";
+
 export interface ProductContextProps {
-  product: object | undefined;
-  products: Array<object>;
-  setProduct: object;
+  product: ProductProps | undefined;
+  products: ProductProps[];
+  setProduct: any;
   selectedSKU: object;
   setSelectedSKU: (sku: object) => void;
 }
