@@ -1,0 +1,144 @@
+@import "../../../styles/variables.scss";
+
+.header {
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include container;
+    padding: 1.125rem 0;
+
+    @media screen and (min-width: $screen__desktop) {
+      padding: 1.625rem;
+    }
+
+    .menu__burger {
+      @media screen and (min-width: $screen__desktop) {
+        display: none;
+      }
+    }
+
+    .right__items {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      @media screen and (min-width: $screen__desktop) {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (min-width: $screen__desktop) {
+    border-bottom: 1px solid $gray__light;
+
+    .right__items {
+      display: none;
+    }
+  }
+}
+
+.menu__nav {
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  border-top: 1px solid $gray__light;
+  border-bottom: 1px solid $gray__light;
+  z-index: 1000;
+  display: fixed;
+  background: white;
+
+  .login {
+    display: none;
+    font-size: 0.75rem;
+
+    span a {
+      display: block;
+      color: $gray;
+      padding: 1rem 0;
+    }
+
+    @media screen and (min-width: $screen__desktop) {
+      display: block;
+    }
+  }
+
+  .menu__list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    @media screen and (min-width: $screen__desktop) {
+      flex-direction: row;
+      gap: 2.5rem;
+    }
+  }
+
+  .search__cart {
+    display: none;
+
+    .search {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid $gray__light;
+      width: 5rem;
+      input {
+        color: $gray;
+        &::placeholder {
+          color: $gray__light;
+          font-size: 0.75rem;
+        }
+      }
+    }
+
+    .cart {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-left: 1rem;
+
+      span {
+        color: $gray;
+      }
+    }
+
+    @media screen and (min-width: $screen__desktop) {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  @media screen and (min-width: $screen__desktop) {
+    padding: 0.5rem 1.875rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0;
+  }
+
+  &.inactive {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10rem);
+    pointer-events: none;
+    transition: all 0.25s ease;
+
+    @media screen and (min-width: $screen__desktop) {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: all;
+    }
+  }
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+    transition: all 0.25s ease;
+  }
+}

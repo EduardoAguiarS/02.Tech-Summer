@@ -1,0 +1,13 @@
+@import "../../../styles/variables.scss";
+
+.menu__item {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.875rem;
+
+  a {
+    display: block;
+    padding: 1rem 0;
+    color: $gray;
+  }
+}
