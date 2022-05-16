@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useProduct } from "../../providers/context";
 
 interface ProductCardProps {}
@@ -16,7 +17,11 @@ export const ProductCard: React.FC<ProductCardProps> = () => {
           <h3>{product.productName}</h3>
           <span>{product.description}</span>
           <div>
-            <button onClick={() => setProduct(product)}>Comprar</button>
+            <button onClick={() => setProduct(product)}>
+              <Link to={`/product/${product.productId}/${product.productName}`}>
+                Comprar
+              </Link>
+            </button>
           </div>
         </div>
       ))}
