@@ -1,0 +1,37 @@
+@import "../../../styles/variables.scss";
+
+.aside__container {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid $gray__light;
+
+  @media screen and (min-width: $screen__desktop) {
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .footer__title {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .more {
+      @media screen and (min-width: $screen__desktop) {
+        display: none;
+      }
+    }
+
+    h4 {
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      color: $gray__medium;
+      font-weight: 400;
+
+      @media screen and (min-width: $screen__desktop) {
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+    }
+  }
+}

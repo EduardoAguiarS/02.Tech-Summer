@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+
+.mfooter_container {
+  border-top: 1px solid $gray__light;
+  margin-top: 6rem;
+  @media screen and (min-width: $screen__desktop) {
+    display: none;
+  }
+
+  .footer__comp {
+    display: flex;
+    flex-direction: column;
+    @include container;
+  }
+}
