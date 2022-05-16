@@ -1,0 +1,25 @@
+$font__family: "Montserrat", sans-serif;
+
+$gray__light: #cccccc;
+$gray: #686868;
+$gray__medium: #aeb6c1;
+$dark: #202020;
+$orange: #e35442;
+$orange__light: #de8f75;
+$orange__dark: #a14830;
+$fucsia: #a9095e;
+$blue__dark: #2a5a75;
+$black: #000000;
+
+$screen__mobile: 20rem;
+$screen__desktop: 80rem;
+
+@mixin container {
+  max-width: 100%;
+  margin: 0 1rem;
+
+  @media screen and (min-width: $screen__desktop) {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
