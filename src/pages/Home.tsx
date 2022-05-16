@@ -1,12 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+// import { useProduct } from "../providers/context";
 
 export const Home = () => {
-    return (
-        <div className="home-page">
-            <h1>Home</h1>
-
-            <Link to="/product/1">Product 1</Link> 
-        </div>
-    )
-}
+  //   const { products } = useProduct();
+  return (
+    <div>
+      <h1>Testando</h1>
+    </div>
+  );
+};
