@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+
+.description {
+  .title {
+    font-size: 0.875rem;
+    color: $orange__light;
+    margin-bottom: 0.3rem;
+    display: block;
+
+    @media screen and (min-width: $screen__desktop) {
+      display: none;
+    }
+  }
+
+  .desc {
+    color: $dark;
+    font-size: 0.875rem;
+  }
+}
