@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+
+.product__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  width: 450px;
+  height: 400px;
+  padding: 1rem;
+  border: 1px solid $gray__light;
+  color: black;
+
+  img {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+  }
+}
