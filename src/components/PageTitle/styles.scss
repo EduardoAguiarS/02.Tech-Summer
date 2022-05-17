@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.page__title {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.375rem;
+  color: $orange__light;
+  text-align: center;
+  margin: 2rem 0;
+
+  @media screen and (min-width: $screen__desktop) {
+    font-size: 1.625rem;
+  }
+}
