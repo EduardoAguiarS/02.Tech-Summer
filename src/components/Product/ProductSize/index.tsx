@@ -17,7 +17,7 @@ const ProductSize = () => {
       </div>
 
       {product?.skuSpecifications[1].values.map((value, index) => (
-        <label className="radio__container">
+        <label className="radio__container" key={value.name}>
           {value.name}
           <input
             className="radio__input"

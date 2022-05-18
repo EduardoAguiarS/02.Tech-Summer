@@ -4,6 +4,7 @@ import PageTitle from "../components/PageTitle";
 import Breadcrumb from "../components/Product/Breadcrumb";
 import { ProductColors } from "../components/Product/ProductColors";
 import ProductDescription from "../components/Product/ProductDescription";
+import ProductDesk from "../components/Product/ProductDesk";
 import ProductPrice from "../components/Product/ProductPrice";
 import ProductSize from "../components/Product/ProductSize";
 import ProductTitle from "../components/Product/ProductTitle";
@@ -17,7 +18,7 @@ export const Product: React.FC<ProductProps> = () => {
     <div>
       <Header />
       <div className="product__container">
-        <Breadcrumb />
+        {/* <Breadcrumb />
         <ProductTitle />
         <ProductDescription />
         <ProductPrice />
@@ -25,7 +26,8 @@ export const Product: React.FC<ProductProps> = () => {
         <ProductColors />
         <SliderProduct />
         <SliderOther />
-        <PageTitle title={"Quem viu, viu tambem"} />
+        <PageTitle title={"Quem viu, viu tambem"} /> */}
+        <ProductDesk />
       </div>
       <Footer />
     </div>
