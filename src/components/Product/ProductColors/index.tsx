@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { useProduct } from "../../providers/context";
+import { useProduct } from "../../../providers/context";
+
 // import "./styles.scss";
 
 export const ProductColors = () => {

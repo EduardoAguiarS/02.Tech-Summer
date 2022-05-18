@@ -2,11 +2,12 @@ import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Hero";
 import PageTitle from "../components/PageTitle";
 import Breadcrumb from "../components/Product/Breadcrumb";
+import { ProductColors } from "../components/Product/ProductColors";
 import ProductDescription from "../components/Product/ProductDescription";
 import ProductPrice from "../components/Product/ProductPrice";
+import ProductSize from "../components/Product/ProductSize";
 import ProductTitle from "../components/Product/ProductTitle";
 import { SliderOther, SliderProduct } from "../components/Product/Slides";
-import { ProductColors } from "../components/ProductColors";
 import "./product.scss";
 
 interface ProductProps {}
@@ -20,6 +21,7 @@ export const Product: React.FC<ProductProps> = () => {
         <ProductTitle />
         <ProductDescription />
         <ProductPrice />
+        <ProductSize />
         <ProductColors />
         <SliderProduct />
         <SliderOther />
