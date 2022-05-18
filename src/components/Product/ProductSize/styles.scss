@@ -1,0 +1,59 @@
+@import "../../../styles/variables.scss";
+
+.size {
+  max-width: 290px;
+
+  @media screen and (min-width: $screen__desktop) {
+    max-width: 330px;
+  }
+  .size__guide {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+
+    span {
+      font-size: 0.875rem;
+      color: $dark;
+    }
+
+    span.size__value {
+      color: $blue__dark;
+      display: none;
+      @media screen and (min-width: $screen__desktop) {
+        display: inline;
+      }
+    }
+
+    a {
+      color: $orange__light;
+      text-decoration: underline;
+      font-size: 0.875rem;
+    }
+  }
+
+  .radio__container {
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+
+    .radio__input {
+      display: none;
+    }
+
+    .radio__style {
+      width: 28px;
+      height: 28px;
+      border: 1px solid $gray__light;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0.2rem;
+      font-size: 0.875rem;
+
+      @media screen and (min-width: $screen__desktop) {
+        width: 33px;
+        height: 33px;
+      }
+    }
+  }
+}

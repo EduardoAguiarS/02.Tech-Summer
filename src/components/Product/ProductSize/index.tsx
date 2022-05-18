@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useProduct } from "../../../providers/context";
-// import "./styles.scss";
+import "./styles.scss";
 
 const ProductSize = () => {
   const [size, setSize] = useState<string>("");
@@ -18,7 +18,6 @@ const ProductSize = () => {
 
       {product?.skuSpecifications[1].values.map((value, index) => (
         <label className="radio__container" key={value.name}>
-          {value.name}
           <input
             className="radio__input"
             type="radio"
@@ -27,15 +26,15 @@ const ProductSize = () => {
             key={index}
             onClick={() => setSize(value.name)}
           />
-          {/* <span
+          <span
             className="radio__style"
             style={{
-              background: `${sSize == number ? "#de8f75" : "white"}`,
-              color: `${sSize == number ? "white" : "#5F75AA"}`
+              background: `${size == value.name ? "#de8f75" : "white"}`,
+              color: `${size == value.name ? "white" : "#5F75AA"}`
             }}
           >
-            {number}
-          </span> */}
+            {value.name}
+          </span>
         </label>
       ))}
     </div>
