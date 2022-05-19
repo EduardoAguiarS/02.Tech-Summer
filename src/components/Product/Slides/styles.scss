@@ -16,7 +16,10 @@
       flex-direction: column;
       gap: 0.5rem;
       img {
-        width: 80px;
+        cursor: pointer;
+
+        min-width: 80px;
+        max-width: 80px;
       }
     }
 
@@ -39,12 +42,17 @@
     gap: 0.875rem;
     flex-wrap: nowrap;
     overflow: hidden;
-
+    justify-content: center;
+    div {
+      display: block;
+    }
     img {
       width: 140px;
-
+      height: 180px;
+      margin-bottom: 0.5rem;
       @media screen and (min-width: $screen__desktop) {
         width: 290px;
+        height: 373px;
       }
     }
   }
@@ -62,5 +70,15 @@
       border: 2px solid #2a5a75;
       border-radius: 50%;
     }
+  }
+}
+
+.hero__img img {
+  width: 250px;
+  height: 325px;
+
+  @media screen and (min-width: $screen__desktop) {
+    width: 430px;
+    height: 556px;
   }
 }

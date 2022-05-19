@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useProduct } from "../../../providers/context";
-import colors from "../../../colors.json";
 
 import "./styles.scss";
 
