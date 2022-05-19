@@ -1,7 +1,20 @@
 import { useState } from "react";
 import { useProduct } from "../../../providers/context";
+import colors from "../../../colors.json";
 
-// import "./styles.scss";
+import "./styles.scss";
+
+function radioColor(color: string) {
+  let sColor = "";
+  if (color === "Preto") {
+    sColor = "#000000";
+  } else if (color === "Branco") {
+    sColor = "#eeeeee";
+  } else if (color === "Amarelo") {
+    sColor = "#fff019";
+  }
+  return sColor;
+}
 
 export const ProductColors = () => {
   const { product } = useProduct();
@@ -16,7 +29,6 @@ export const ProductColors = () => {
 
       {product?.skuSpecifications[0].values.map((value, index) => (
         <label className="radio__container" key={value.name}>
-          {value.name}
           <input
             className="radio__input"
             key={index}
@@ -26,14 +38,16 @@ export const ProductColors = () => {
             // defaultChecked={index == 0 ? true : false}
             onClick={() => setColor(value.name)}
           />
-          {/* <span
+          <span
             className={`radio__style`}
             style={{
-              background: `${color}`,
+              background: `${radioColor(value.name)}`,
               border: "2px solid white",
-              boxShadow: `${cor == color ? `0 0 0 2px ${color}` : "none"}`
+              boxShadow: `0 0 0 2px ${
+                value.name === color ? radioColor(value.name) : "transparent"
+              }`
             }}
-          ></span> */}
+          ></span>
         </label>
       ))}
     </div>
