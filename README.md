@@ -10,9 +10,9 @@ The technologies used here:
 
 [`SASS`](https://sass-lang.com/)
 
-[TypeScript](https://www.typescriptlang.org/)
+[`TypeScript`](https://www.typescriptlang.org/)
 
-[Json Server](https://www.npmjs.com/package/json-server)
+[`Json Server`](https://www.npmjs.com/package/json-server)
 
 ### How to use the project:
 
