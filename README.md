@@ -18,6 +18,7 @@ The technologies used here:
 
     Clone this repository on your computer.
     Open the terminal and navigate to the project folder.
+    Run the command: `npm i` to install dependences.
     Run the command: `npm server` to start the server.
     Run the command: `npm start` to start the application.
     Open the browser and navigate to: `http://localhost:3000/`
